@@ -6,7 +6,24 @@
     <div class="Triangle Triangle--four" />
   </div>
 </template>
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
 
+@Component({
+  name: 'MyButton',
+  components: {
+  },
+})
+
+export default class MyButton extends Vue{
+  // 型推論を有効にする
+  created(){
+      console.log('aaaaa')
+  }
+}
+
+
+</script>
 <style>
 .VueToNuxtLogo {
   display: inline-block;
